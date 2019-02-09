@@ -12,7 +12,7 @@ Later, these projects are merged and hopefully we will see something that is abl
 
 ## Subprojects
 
-Robotic Turk is produced by combination different kind of components, which are providing atleast:
+Robotic Turk is produced by combinating different kind of components, which are providing atleast:
 
 
   * [K.O.U.R.A. (the robotic arm)](docs/KOURA.md)
@@ -33,11 +33,11 @@ Robotic Turk is produced by combination different kind of components, which are 
 
 ## ROS
 
-[The Robotic Operating System](https://www.ros.org) will be/has been used to implement the functionalities and combine them working as whole.
+[The Robotic Operating System](https://www.ros.org) will be used to implement the functionalities and to combine them to work as whole.
 
 Service oriented framework allows development of individual components and controlled communicating between them. 
 
-More precisely,  [Kinetic version](http://wiki.ros.org/kinetic) is recommended version to use in this project, as there are working support for Raspberry Pi devices.
+More precisely,  [Kinetic version](http://wiki.ros.org/kinetic) is recommended version to use in this project, as there is working support for Raspberry Pi devices.
 
 [Ubiquity Robotics is maintaining](https://downloads.ubiquityrobotics.com/pi.html) Raspberry Pi images containing required packages in easy way.
 
