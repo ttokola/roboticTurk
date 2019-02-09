@@ -90,14 +90,13 @@ Both of the following packages are developed and maintained by Robotis, under Ap
   * GitHub [URL.](https://github.com/ROBOTIS-GIT/DynamixelSDK)
   * Documentation [URL.](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/)
 
-* Dynamixel Workbench is one level higher environment: it is generating functionality based on driver code.
+* Dynamixel Workbench (also ROS package) is one level higher environment: it is generating functionality based on driver code.
   * GitHub [URL.](https://github.com/ROBOTIS-GIT/dynamixel-workbench)
   * Documentation [URL.](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_workbench/)
 
+By using these ROS packages with combintion of custom made circuit and Arduino data-relay, we are already able to control Dynamixel actuators, with Raspberry or another device running ROS.
 
 [Here](https://github.com/hackerspace-adelaide/XL320) is one simpler approach for using XL-320 actuators on Arduino.
-
-By using these ROS packages with combintion of custom made circuit and Arduino data-relay, we are already able to control Dynamixel actuators, with Raspbebery or another device running ROS.
 
 
 
