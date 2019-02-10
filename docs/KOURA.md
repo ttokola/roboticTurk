@@ -5,11 +5,11 @@ This file is intended to provide *very short* glance for how the arm was done.
 
 ## Introduction
 
-K.O.U.R.A. is self-designed (well, almost) robotic arm which *should* be capable of moving chesspieces in official competition chessboard (50cm x 50cm).
+K.O.U.R.A. is self-designed (well, almost) robotic arm which *should* be capable of moving chess pieces in official competition chessboard (50cm x 50cm).
 
-As the reach of the arm should be 50cm or very close to it, the maximun reach requires a lot of torque for first and second folding joint. This required some design implementations, whereas *springs* have been used to act as counter-weight.
+As the reach of the arm should be 50cm or very close to it, the maximum reach requires a lot of torque for first and second folding joint. This required some design implementations, whereas *springs* have been used to act as counter-weight.
 
-The actual 'Gripper' part is quite big, and therefore it is heavy. It suitable for picking big chesspieces in big board. Little board is prolematic, as the 'Gripper' is too big to fit in one single square.
+The actual 'Gripper' part is quite big, and therefore it is heavy. It is suitable for picking up big chess pieces from a big board. Little board is problematic, as the 'Gripper' is too big to fit in one single square.
 
 Maybe later tinier gripper will be implemented.
 
@@ -22,15 +22,15 @@ Those are:
   * Dynamixel XL430-W250 (Joints)
   * Dynamixel XL-320 (Gripper movement)
 
-There are seperate instructions for using the servos. It is provided [here.](Introduction_to_servos.md)
+There are separate instructions for using the servos. It is provided [here.](Introduction_to_servos.md)
 
 ## Parts
 
-To be able to create something that we are able use with our servos, parts need to be designed by ourselves.
+To be able to create something that we are able use with our servos, parts had to be designed by ourselves.
 
-Laser cutting and 3D printing are available options. Both of these are requiring models provided by computer aided design. 
+Laser cutting and 3D printing were the available options. Both of these are requiring models provided by computer aided design. 
 
-We noticed later, that the power of servos is inefficient for moving the parts alone, even though we tried to calculate it. Some springs have been added acting as 'counter-weight' to help with heavylifting.
+We noticed later, that the power of servos is inefficient for moving the parts alone, even though we tried to calculate it. Some springs have been added to act as a 'counter-weight' to help with heavy lifting.
 
 TODO: Add image
 
@@ -38,7 +38,7 @@ TODO: Add image
 
 ![](img/Koura_cad_preview.png)
 
-This was first time for makers to do something with CAD, so process was somewhat long with very slow start.
+This was first time for the makers to do something with CAD, so process was somewhat long with a very slow start.
 
 However, something was finally achieved.
 
@@ -52,9 +52,9 @@ Actual 'Gripper' component is based on [OpenManipulator](http://emanual.robotis.
 
 [Fab Lab Oulu](https://www.oulu.fi/fablab/) has been used to 3D print and laser cut suitable components.
 
-Small components (little white ones) were printed by using [Formlabs Form 2 3D printer.](https://formlabs.com/3d-printers/form-2/)
+Small components (little white ones) were printed by using [Formlabs Form 2 3D printer.](https://formlabs.com/3d-printers/form-2/). The material available at the time for this printer was [White Resin](https://formlabs.com/store/eu/form-2/materials/white-resin/).
 
-Gripper and other big black parts were printed by using [Stratasys 380mc printer.](https://www.stratasys.com/3d-printers/fortus-380mc-450mc)
+Gripper and other big black parts were printed by using [Stratasys 380mc printer.](https://www.stratasys.com/3d-printers/fortus-380mc-450mc). The material chosen for this prototype was [PC-ABS](https://www.stratasys.com/materials/search/pc-abs).
 
 2D parts were cut from 2/3/4mm vinyl, by using [Epilog Laser Fusion 75W CO2](https://www.epiloglaser.com/laser-machines/fusion-laser-series.htm)
 
