@@ -5,6 +5,8 @@ This file is intended to provide *very short* glance for how the arm was done.
 
 ## Introduction
 
+![](img/robotic_arm.JPG)
+
 K.O.U.R.A. is self-designed (well, almost) robotic arm which *should* be capable of moving chess pieces in official competition chessboard (50cm x 50cm).
 
 As the reach of the arm should be 50cm or very close to it, the maximum reach requires a lot of torque for first and second folding joint. This required some design implementations, whereas *springs* have been used to act as counter-weight.
@@ -31,8 +33,6 @@ To be able to create something that we are able use with our servos, parts had t
 Laser cutting and 3D printing were the available options. Both of these are requiring models provided by computer aided design. 
 
 We noticed later, that the power of servos is inefficient for moving the parts alone, even though we tried to calculate it. Some springs have been added to act as a 'counter-weight' to help with heavy lifting.
-
-TODO: Add image
 
 ### CAD files
 
