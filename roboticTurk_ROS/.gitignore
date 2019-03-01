@@ -1,0 +1,14 @@
+\.vscode/
+build
+
+devel
+
+src/DynamixelSDK
+
+src/dynamixel-workbench-msgs
+
+src/moveit_msgs
+
+src/object_recognition_msgs
+
+src/open_manipulator_msgs
