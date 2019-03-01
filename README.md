@@ -16,7 +16,7 @@ Robotic Turk is produced by combinating different kind of components, which are 
 
 
   * [K.O.U.R.A. (the robotic arm)](docs/KOURA.md)
-    * Aims to be the component capable of moving chesspieces from place A to place B.     The first version of robotic arm is provided by student-workers for the course.
+    * Aims to be the component capable of moving chesspieces from place A to place B. The first version of robotic arm is provided by student-workers for the course.
 
   * The Head 
     * Containing camera and screen. Capable of moving itself and providing/showing different kind of information
@@ -28,8 +28,13 @@ Robotic Turk is produced by combinating different kind of components, which are 
     * Aims to provide movement for robotic arm, based on different kind of information.
   * Overall A.I.
     * Aims to provide artificial intelligence for moving the chess pieces **and** for overall system make system act as whole. 
+  * Speech recognition
+    * Some controls which should be able to use by speech
+  * Face detection
+    * Availability to detect if there is player playing at the moment. Possible other features as well.
+  
 
-*TBA later: More projects and components. More information about subprojects. Current details might change. Something might be missing already...*
+*TBA later: More projects and components. Current details might change.*
 
 ## ROS
 
