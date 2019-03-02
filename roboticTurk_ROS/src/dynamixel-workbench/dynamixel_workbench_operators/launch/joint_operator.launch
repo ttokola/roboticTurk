@@ -1,0 +1,12 @@
+<launch>
+  <arg name="namespace"               default="manipulator"/>
+  <arg name="is_loop"               default="false"/>
+  <arg name="filename"     default="demo.yaml"/>
+
+  <param name="$(arg namespace)/trajectory_info" value="$(find dynamixel_workbench_operators)/config/$(arg filename)"/>
+
+  <node name="joint_operator" pkg="dynamixel_workbench_operators" type="joint_operator"
+        required="true" output="screen" ns="$(arg namespace)">
+    <param name="is_loop" value="$(arg is_loop)"/>
+  </node>
+</launch>
