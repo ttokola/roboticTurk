@@ -6,11 +6,11 @@ Some tutorials for actually using Catkin can be found from [here.](http://wiki.r
 
 ## Getting started
 
-This workspace contains curretly modified version of the [Dynamixel Workbench](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_workbench/)
+This workspace contains curretly modified version of the [Dynamixel Workbench](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_workbench/).
 
-This package is mainly required for controlling the actuators in robotic arm. This package has another Dynamixel package [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/) as mandatory dependecy as well, and it might be needed to edit as well.
+This package is mainly required for controlling the actuators in robotic arm. This package has another Dynamixel package [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/) as mandatory dependecy as well, and it might be needed to be edited as well.
 
-To get the robotic arm to work, there are other dependencies and packages to be installed at first.
+To get the robotic arm to work, there are other dependencies and packages that need to be installed first.
 
 **Ubuntu 16.04** is required as operating system, if not ARM based computer is used.
 If ARM based computer is used, [here are some images for it.](https://downloads.ubiquityrobotics.com/pi.html)
