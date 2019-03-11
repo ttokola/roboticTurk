@@ -104,9 +104,9 @@ We tried to replace SyncWrite with BulkWrite as well, but if we are connecting m
 
 Contoller has currently subscribed at least for two operations: to reveive joint operations and for arbitrary commands. 
 
-New subsrciber could be added into controller, which is excepting coordinates. Based on these coordinates, new joint operatins could be created, and in the end of joint movement, gripper could be controlled separately.
+New subsrciber could be added into controller, which is excepting coordinates. Based on these coordinates, new joint operations could be created, and in the end of joint movement, gripper could be controlled separately.
 
-Or arm could be controlled by using existing operator and command interface. The actual 'operator' package should be modified to act as subscriber for coordinates. It should create joint operations based on coordinates. In specific positions or time tables, it could control gripper separately.
+Alternatively the arm could be controlled by using an existing operator and command interface. The actual 'operator' package should be modified to act as subscriber for coordinates. It should create joint operations based on coordinates. In specific positions or time tables, it could control gripper separately.
 
 These are some ideas, there are probably many other ways to implement it!
 
