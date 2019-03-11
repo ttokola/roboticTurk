@@ -13,7 +13,7 @@ This package is mainly required for controlling the actuators in robotic arm. Th
 To get the robotic arm to work, there are other dependencies and packages to be installed at first.
 
 **Ubuntu 16.04** is required as operating system, if not ARM based computer is used.
-If ARM based computer is used, [here are some images for it.]((https://downloads.ubiquityrobotics.com/pi.html))
+If ARM based computer is used, [here are some images for it.](https://downloads.ubiquityrobotics.com/pi.html)
 
 To install these packages, run:
 ```shell
@@ -84,6 +84,29 @@ id: 1
 addr_name: 'Goal_Position'
 value: 2048"
 ```
-This should move first actuator to position 2048. What that position is, depends on the value range of actuator.
+This should move the first actuator to position 2048. What that position is, depends on the value range of actuator.
 
 ### Problems and modifications in Dynamixel Workbench: future ideas
+
+As we are using two different types of actuators in the robotic arm, the default Dynamixel controller will not work as excepted.
+
+Controller file can be found from [here.](src/dynamixel-workbench/dynamixel_workbench_controllers/src/dynamixel_workbench_controllers.cpp)
+
+Default controller is using [SyncRead](http://emanual.robotis.com/docs/en/dxl/protocol2/#sync-read) and [SyncWrite](http://emanual.robotis.com/docs/en/dxl/protocol2/#sync-write) for reading/writing data for actuators. 
+
+This means, that it is *reading and writing* data from/into **same** memory address always. As we have two different kind of actuators, these memory addresses are varying. XL320 is not supporting Inderct Addresses so we can't go around this.
+
+To overcome this problem, SyncRead has been replaced with BulkRead, where every address can be speficied. **Downside is**, that packet length will increase, and it takes more bandwith (baudrate).
+
+We tried to replace SyncWrite with BulkWrite as well, but if we are connecting more than 4 actuators, it will start to 'lag', for some reason there is bottleneck somewhere and all data is not processed or moving. There might have been bug in code as well, try to fix it! This enables usage of 'operator' for all actuators out of the box.
+
+#### Ideas for actually using robotic had to receive coordinate and move piece from place to another?
+
+Contoller has currently subscribed at least for two operations: to reveive joint operations and for arbitrary commands. 
+
+New subsrciber could be added into controller, which is excepting coordinates. Based on these coordinates, new joint operatins could be created, and in the end of joint movement, gripper could be controlled separately.
+
+Or arm could be controlled by using existing operator and command interface. The actual 'operator' package should be modified to act as subscriber for coordinates. It should create joint operations based on coordinates. In specific positions or time tables, it could control gripper separately.
+
+These are some ideas, there are probably many other ways to implement it!
+
